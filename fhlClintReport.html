@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clint Report</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+
+        html {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        body {
+            width: 700px;
+            overflow-x: hidden;
+            font-family: sans-serif;
+        }
+
+        .header {
+            margin: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header img {
+            width: 30%;
+        }
+
+        .header p {
+            font-size: 10px;
+        }
+
+        .header p span {
+            font-size: 16px;
+        }
+
+        .main {
+            margin: 0 50px;
+        }
+
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main-header img {
+            width: 80%;
+        }
+
+        .main-header .title {
+            color: #619e42;
+            font-size: 70px;
+            padding-right: 5px;
+        }
+
+        .ltd {
+            color: #000;
+            text-transform: capitalize;
+        }
+
+        #branding {
+            position: relative;
+        }
+
+        .branding {
+            position: absolute;
+            font-size: 10px;
+            font-style: italic;
+            margin: -13px 168px;
+            ;
+        }
+
+        .brnd-adress {
+            font-size: 14px;
+        }
+
+        hr.style-one {
+            border: 0;
+            height: 1px;
+            background: #333;
+            background-image: linear-gradient(to right, #ccc, #333, #ccc);
+        }
+
+        .clint-details {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .clint-details h3 {
+            margin-right: 61px;
+        }
+
+        .clint-details label {
+            font-weight: bold;
+        }
+        #project{
+            margin-bottom: 8px;
+        }
+
+        .clint-info {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .clint-nomini-info {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .client-addres {
+            margin-top: 20px;
+        }
+
+        .flat-details {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .amount-table{
+            margin-top: 40px;
+        }
+        table {
+            text-align: center;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            text-align: center;
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div><img src="https://i.ibb.co/68Cykjs/a.png" alt="a" border="0" /></div>
+        <div class="addres">
+            <p><span>Office</span> :</p>
+            <p>61,Muktijuddha Sarani,Azampur,Dakkhin khan,Uttara,Dhaka-1230</p>
+            <p>Email:freshome77ltd@gmail.com,Phone:01711610826,01676720388</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-header">
+            <div class="logo">
+                <img src="https://i.ibb.co/68Cykjs/a.png" alt="Logo" />
+            </div>
+            <div class="main-title">
+                <p id="branding">
+                    <span class="title">freshome</span><span class="ltd">Ltd.</span>
+                    <p class="branding">We Accompany Your Dream.</p>
+                </p>
+                <p class="brnd-adress"> 61,Muktijuddha Sarani,Azampur,Dakkhin khan,Uttara,Dhaka-1230</p>
+            </div>
+        </div>
+        <div class="clint-details">
+            <h3>CLINT DETAILS</h3>
+            <div class="project-name">
+                <label for="project">Project Name:</label>
+
+                <select id="project">
+                    <option value="MR VIEW">MR VIEW</option>
+                    <option value="ROSE GARDEN">ROSE GARDEN</option>
+                    <option value="SHAFAYET HOMS">SHAFAYET HOMS</option>
+                    <option value="M.M FRESH SKY VIEW" selected>M.M FRESH SKY VIEW</option>
+                </select>
+                <p>325 East Azampur,Dhakkhin Khan,uttara,Dhaka 1230</p>
+            </div>
+        </div>
+        <hr class="style-one">
+
+        <div class="clint-info">
+            <div class="clint-name">
+                <label for="clintName"> Clint Name :</label>
+
+                <input type="text" id="clintName">
+            </div>
+            <div class="booking-date">
+                <label for="bookingDate">Booking Date :</label>
+                <input type="date" id="bookingDate">
+            </div>
+        </div>
+
+        <div class="clint-nomini-info">
+            <div class="father-name">
+                <label for="fatherName">Father/Husbent Name :</label>
+                <input type="text" id="fatherName">
+            </div>
+
+            <div class="install-date">
+                <label for="installDate">Install Date :</label>
+                <input type="date" id="installDate">
+            </div>
+        </div>
+
+        <div class="client-addres">
+            <label for="clientAddres">Client Adress :</label>
+            <input type="text" id="clientAdress">
+        </div>
+
+        <div class="flat-details">
+            <div class="flat-area">
+                <label for="flatArea">Flat Area :</label>
+                <input type="text" id="flatArea">
+            </div>
+
+            <div class="flat-no">
+                <label for="flatNo">Flat No :</label>
+                <input type="text" id="flatNo">
+            </div>
+        </div>
+
+        <div class="amount-table">
+            <table>
+                <tr>
+                    <th>Sl No</th>
+                    <th>Collection
+                        Date</th>
+                    <th>Amount Paid
+                        Taka (BDT)</th>
+                    <th>Total Amount
+                        Taka(BDT)</th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                    <td>Germany</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <button>click</button>
+    <script>
+        let clintName = document.querySelector('#clintName');
+        let btn = document.querySelector("button");
+
+        btn.addEventListener('click',function(e){
+
+                console.log(clintName.value);
+        })
+        
+    </script>
+</body>
+
+</html>
